@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+    <div class="all home">
+
+        <div class="banner">
+            <img src="images/advBanner.png"/>
+        </div>
+
+        <ul>
+            <li>
+                <a href="shopCart.html">
+                    <div class="icon" style="background: #e85280;">
+                        <img src="images/byCar.png">
+                    </div>
+                    <p>购物车</p>
+                    <b class="cartNumber"></b>
+                </a>
+            </li>
+            <li>
+                <a href="coupon.html">
+                    <div class="icon" style="background: #24cdb8;">
+                        <img src="images/favorable.png">
+                    </div>
+                    <p>优惠券</p>
+                    <b class="couponNumber"></b>
+                </a>
+            </li>
+            <li>
+                <a href="prodList.html">
+                    <div class="icon" style="background: #e5be33;">
+                        <img src="images/goods.png">
+                    </div>
+                    <p>商品</p>
+                </a>
+            </li>
+            <li>
+                <a href="top-up.html">
+                    <div class="icon" style="background: #f6722a;">
+                        <img src="images/top-up.png">
+                    </div>
+                    <p>充值</p>
+                </a>
+            </li>
+            <li>
+                <a href="userCenter.html">
+                    <div class="icon" style="background: #3fb8f1;">
+                        <img src="images/remaining.png">
+                    </div>
+                    <p>账户余额</p>
+                </a>
+            </li>
+            <li>
+                <a href="myOrder.html">
+                    <div class="icon" style="background: #c53ff6;">
+                        <img src="images/order.png" style="width: 50%;">
+                    </div>
+                    <p>我的订单</p>
+                </a>
+            </li>
+        </ul>
+        <footer>
+            <div>
+                <a href="message.html"><img src="images/message.png"/>
+                    <span>通知</span>
+                </a>
+            </div>
+            <div>
+                <a href="userCenter.html">
+                    <img src="images/user.png"/>
+                    <span>个人中心</span>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/domain.js"></script>
+    <script>
+        (function(){
+            var icon = $(".icon");
+            icon.height(icon.width());
+
+
+        })();
+    </script>
+    <script src="js/index.js"></script>
+</body>
+</html>

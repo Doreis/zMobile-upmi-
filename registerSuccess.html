@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>注册完成</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+    <div class="all registerSuccess">
+
+        <div class="regSucCont">
+            <img src="images/success.png"/>
+            <p>账号注册已完成(<b>5s</b>)<br>我们将尽快审核,并会有专人与您联系</p>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script>
+        (function(){
+            var num = 5;
+
+            setInterval(function(){
+                num--;
+                $(".regSucCont").find("b").html(num+"s");
+                if(num==0){
+                    window.location.href = "login.html";
+                }
+            },1000);
+        })();
+    </script>
+</body>
+</html>

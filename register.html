@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+    <div class="all register">
+
+        <form action="http://m.zyanjing.com/mob_zyanjing/userregister.shtml" method="post" enctype="multipart/form-data">
+            <ul>
+                <li>
+                    <span>公司</span>
+                    <input type="text" placeholder="公司名为必填" id="companyName" name="cust_name"/>
+                    <img src="images/star.png" class="star"/>
+                </li>
+                <li class="regLocation" id="regLocation">
+                    <span>所在地区</span>
+                    <input type="text" id="location" value="" placeholder="请选择" readonly/>
+                    <input type="text" class="location" id="province" value=""  name="province" readonly/>
+                    <input type="text" class="location" name="cities" id="cities" value="" readonly/>
+                    <input type="text" class="location" name="areas" id="areas" value="" readonly/>
+                    <img src="images/star.png" class="star"/>
+                </li>
+                <li class="regLocation">
+                    <span>街道</span>
+                    <input type="text" name="cust_address" id="street" value="" placeholder="请输入详细地址"/>
+                </li>
+                <li>
+                    <span>法人</span>
+                    <input type="text" placeholder="请输入" id="legalPerson" name="cust_legal_person"/>
+                    <img src="images/star.png" class="star"/>
+                </li>
+                <li>
+                    <span>手机号码</span>
+                    <input type="number" placeholder="请输入" id="phone" name="cust_phone"/>
+                    <img src="images/star.png" class="star"/>
+                </li>
+                <li>
+                    <span>联系人</span>
+                    <input type="text" id="contactMan" name="cust_person"/>
+                </li>
+                <li>
+                    <span>邮箱</span>
+                    <input type="email" id="cust_email" name="cust_email"/>
+                </li>
+                <li>
+                    <span>请上传身份证</span>
+                    <b></b>
+                    <a><input type="file" class="file" id="manPhoto" name="person_file"/>选择照片</a>
+                </li>
+                <li>
+                    <span>请上传营业执照</span>
+                    <b></b>
+                    <a><input type="file" class="file" id="businessPhoto" name="license_file"/>选择照片</a>
+                </li>
+                <li>
+                    <span>请上传门头照片</span>
+                    <b></b>
+                    <a><input type="file" class="file" id="doorPhoto" name="other_file"/>选择照片</a>
+                </li>
+            </ul>
+            <input name="reg_code" id="reg_code" class="regHideIn">
+            <input name="refer_id" id="refer_id" class="regHideIn">
+            <p><span>为必填项</span><img src="images/star.png"/><span>打</span></p>
+            <div class="registerOnce">
+                <input type="submit">
+                <a><span>注册</span></a>
+            </div>
+        </form>
+
+
+        <div class="regPop">
+            <div class="regPopHead">
+                <div class="popClose"><img src="images/close.png"/></div>
+                <div class="confirm">确定</div>
+            </div>
+            <div class="regPopCont">
+                <div class="locaChoose"></div>
+                <div class="regPopContUl">
+                    <ul class="province">
+
+                    </ul>
+                </div>
+                <div class="regPopContUl">
+                    <ul class="cities">
+
+                    </ul>
+                </div>
+                <div class="regPopContUl">
+                    <ul class="areas">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="popBack"></div>
+    </div>
+
+
+    <div class="chooseLoc MoProvince">
+        <div class="header">
+            <span>选择省</span>
+            <img src="images/arrowLeft.png"/>
+        </div>
+        <p>A</p>
+        <ul></ul>
+        <p>B</p>
+        <ul></ul>
+        <p>C</p>
+        <ul></ul>
+        <p>D</p>
+        <ul></ul>
+        <p>E</p>
+        <ul></ul>
+        <p>F</p>
+        <ul></ul>
+        <p>G</p>
+        <ul></ul>
+        <p>H</p>
+        <ul></ul>
+        <p>I</p>
+        <ul></ul>
+        <p>J</p>
+        <ul></ul>
+        <p>K</p>
+        <ul></ul>
+        <p>L</p>
+        <ul></ul>
+        <p>M</p>
+        <ul></ul>
+        <p>N</p>
+        <ul></ul>
+        <p>O</p>
+        <ul></ul>
+        <p>P</p>
+        <ul></ul>
+        <p>Q</p>
+        <ul></ul>
+        <p>R</p>
+        <ul></ul>
+        <p>S</p>
+        <ul></ul>
+        <p>T</p>
+        <ul></ul>
+        <p>U</p>
+        <ul></ul>
+        <p>V</p>
+        <ul></ul>
+        <p>W</p>
+        <ul></ul>
+        <p>X</p>
+        <ul></ul>
+        <p>Y</p>
+        <ul></ul>
+        <p>Z</p>
+        <ul></ul>
+    </div>
+
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/domain.js"></script>
+    <script src="js/register.js"></script>
+
+</body>
+</html>

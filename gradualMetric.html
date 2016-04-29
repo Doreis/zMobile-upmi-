@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>渐进</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+    <div class="all gradual">
+
+        <div class="gradualChoose">
+            <span>R</span>
+            <ul>
+                <li>
+                    <p>球镜</p>
+                    <input type="text" readonly class="qiuJR glassInput">
+                </li>
+                <li>
+                    <p>柱镜</p>
+                    <input type="text" readonly class="zhuJR glassInput">
+                </li>
+                <li>
+                    <p>轴位</p>
+                    <input type="text" class="r_axial allAxial">
+                </li>
+                <li>
+                    <p>ADD</p>
+                    <input type="text" class="r_under_can_light under_can_light" readonly>
+                </li>
+            </ul>
+        </div>
+        <div class="gradualChoose">
+            <span>L</span>
+            <ul>
+                <li>
+                    <p>球镜</p>
+                    <input type="text" readonly class="qiuJL glassInput">
+                </li>
+                <li>
+                    <p>柱镜</p>
+                    <input type="text" readonly class="zhuJL glassInput">
+                </li>
+                <li>
+                    <p>轴位</p>
+                    <input type="text" class="l_axial allAxial">
+                </li>
+                <li>
+                    <p>ADD</p>
+                    <input type="text" class="l_under_can_light under_can_light" readonly>
+                </li>
+            </ul>
+        </div>
+        <ul class="gradualOther">
+            <li>
+                <p>瞳距</p>
+                <input type="text" class="r_far_ipd otherNum">
+            </li>
+            <li>
+                <p>瞳高</p>
+                <input type="text" class="r_high_pupil otherNum">
+            </li>
+            <li>
+                <p>最大对角长</p>
+                <input type="text" class="frame_max_dia_length otherNum">
+            </li>
+            <li>
+                <p>镜宽</p>
+                <input type="text" class="frame_width otherNum">
+            </li>
+            <li>
+                <p>镜高</p>
+                <input type="text" class="frame_height otherNum">
+            </li>
+            <li>
+                <p>梁宽</p>
+                <input type="text" class="frame_bridge_size otherNum">
+            </li>
+        </ul>
+
+        <div class="gradualNumber">
+            <span>数量</span>
+            <div class="gradualNumberC">
+                <a>R</a>
+                <input type="text" value="0" id="rightNumber" class="numberInput"/>
+            </div>
+            <div class="gradualNumberC">
+                <a>L</a>
+                <input type="text" value="0" id="leftNumber" class="numberInput"/>
+            </div>
+        </div>
+
+
+        <div class="carFoot">
+            <a>合计:￥<b class="totalMoney">0</b></a>
+            <a class="addCart">加入购物车</a>
+        </div>
+    </div>
+
+
+    <div class="choosePop">
+        <div class="choosePopCont choosePopCont1">
+            <ul class="metric1">
+
+            </ul>
+            <ul class="metric2">
+
+            </ul>
+            <ul class="metric3">
+
+            </ul>
+            <ul class="metric4">
+
+            </ul>
+        </div>
+
+        <div class="choosePopCont choosePopCont2">
+            <ul class="metric11">
+
+            </ul>
+            <ul class="metric22">
+
+            </ul>
+            <ul class="metric33">
+
+            </ul>
+            <ul class="metric44">
+
+            </ul>
+        </div>
+
+
+    </div>
+
+
+    <div class="removePop removePopContinue">
+        <div class="removeCont">
+            <p>是否继续购物!</p>
+            <a>
+                <span class="abortRemove abortContinue">否</span>
+                <span class="confirmRemove confirmContinue">是</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="choosePopBt">
+        <a class="popClose">取消</a>
+        <a class="confirm">确定</a>
+    </div>
+    <div class="loading">
+        <img src="images/load.png"/>
+    </div>
+
+    <div class="metricPopBack"></div>
+
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/domain.js"></script>
+    <script src="js/gradualMetric.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>单光</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+    <div class="all notMetric">
+
+        <div class="notMetricCont">
+            <ul>
+                <li>
+                    <div class="single chooseOn firstSingle">
+                        <p>
+                            <span>数量</span>
+                            <input type="text" value="1" class="singleN numberInput"/>
+                        </p>
+                        <p>
+                            <span>球镜</span>
+                            <input type="text" value="" readonly class="qiuJ"/>
+                        </p>
+                        <p>
+                            <span>柱镜</span>
+                            <input type="text" value="" readonly class="zhuJ"/>
+                        </p>
+                    </div>
+                    <div class="dyeing">
+                        <div class="dyeingChoose">
+                            <p>R</p>
+                            <a>
+                                <span>
+                                    <b>数量</b>
+                                    <input type="text" class="RNumber dyeingNum" value="1">
+                                </span>
+                                <span>
+                                    <b>球镜</b>
+                                    <input class="qiuJR" readonly>
+                                </span>
+                                <span>
+                                    <b>柱镜</b>
+                                    <input class="zhuJR zhuJInputs" readonly>
+                                </span>
+                                <span>
+                                    <b>轴向</b>
+                                    <input class="r_axial axialMust allAxial" value="0">
+                                </span>
+                            </a>
+                        </div>
+                        <div class="dyeingChoose">
+                            <p>L</p>
+                            <a>
+                                <span>
+                                    <b>数量</b>
+                                    <input type="text" class="LNumber dyeingNum" value="0">
+                                </span>
+                                <span>
+                                    <b>球镜</b>
+                                    <input class="qiuJL" readonly>
+                                </span>
+                                <span>
+                                    <b>柱镜</b>
+                                    <input class="zhuJL zhuJInputs" readonly>
+                                </span>
+                                <span>
+                                    <b>轴向</b>
+                                    <input class="l_axial allAxial">
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="dyeingOther">
+                            <span>
+                                <b>瞳距</b>
+                                <input class="r_far_ipd otherNum" type="text">
+                            </span>
+                            <span>
+                                <b>瞳高</b>
+                                <input class="r_high_pupil otherNum" type="text">
+                            </span>
+                            <span>
+                                <b>最大对角长</b>
+                                <input class="frame_max_dia_length otherNum" type="text">
+                            </span>
+                            <span>
+                                <b>镜宽</b>
+                                <input class="frame_width otherNum" type="text">
+                            </span>
+                            <span>
+                                <b>镜高</b>
+                                <input class="frame_height otherNum" type="text">
+                            </span>
+                            <span>
+                                <b>梁宽</b>
+                                <input class="frame_bridge_size otherNum" type="text">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="button addButton"></div>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+        <div class="carFoot">
+            <a>合计:￥<b class="totalMoney"></b></a>
+            <a class="addCart">加入购物车</a>
+        </div>
+    </div>
+
+
+    <div class="removePop removePopDe">
+        <div class="removeCont">
+            <p>是否确定删除!</p>
+            <a>
+                <span class="abortRemove">取消</span>
+                <span class="confirmRemove">确定</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="removePop removePopContinue">
+        <div class="removeCont">
+            <p>是否继续购物!</p>
+            <a>
+                <span class="abortRemove abortContinue">否</span>
+                <span class="confirmRemove confirmContinue">是</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="choosePop">
+        <div class="choosePopCont choosePopCont1">
+            <ul class="metric1">
+
+            </ul>
+            <ul class="metric2">
+
+            </ul>
+            <ul class="metric3">
+
+            </ul>
+            <ul class="metric4">
+
+            </ul>
+        </div>
+        <div class="choosePopCont choosePopCont2">
+            <ul class="metric11">
+
+            </ul>
+            <ul class="metric22">
+
+            </ul>
+            <ul class="metric33">
+
+            </ul>
+            <ul class="metric44">
+
+            </ul>
+        </div>
+
+    </div>
+<div class="choosePopBt">
+            <a class="popClose">取消</a>
+            <a class="confirm">确定</a>
+        </div>
+    <div class="metricPopBack"></div>
+
+    <div class="loading">
+        <img src="images/load.png"/>
+    </div>
+
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/domain.js"></script>
+    <script src="js/metric.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+    <div class="all shopCart">
+
+        <header>
+            购物车
+            <a class="deleteCart">删除</a>
+        </header>
+        <ul>
+
+        </ul>
+
+        <div class="shopCartFoot">
+            <a class="allChoose">
+                <b></b>
+                <span>全选</span>
+            </a>
+            <a class="totalMoney">
+                合计:￥0
+            </a>
+            <a class="shopPayBt">去结算</a>
+        </div>
+
+
+        <div class="noMessage">
+            <img src="images/kongIcon.png"/>
+            <p>当前购物车无数据!<br>快去商品购买吧!</p>
+        </div>
+    </div>
+
+    <div class="loading">
+        <img src="images/load.png"/>
+    </div>
+
+
+    <div class="removePop">
+        <div class="removeCont">
+            <p>是否确定删除!</p>
+            <a>
+                <span class="abortRemove">取消</span>
+                <span class="confirmRemove">确定</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/domain.js"></script>
+    <script src="js/shopCart.js"></script>
+</body>
+</html>
